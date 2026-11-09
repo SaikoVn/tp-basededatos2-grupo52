@@ -1,0 +1,82 @@
+%% TPI Veterinaria: 8 entidades, 8 FK reales. Los tipos VARCHAR_n corresponden a VARCHAR(n).
+%% AuditoriaTurnos.id_turno es HISTORICO; deliberadamente sin FK real.
+%% CHECK: Mascotas.sexo M/F; Pagos.metodo_pago efectivo/tarjeta/transferencia;
+%% AuditoriaTurnos.tipo_evento alta/cancelado/reprogramacion/baja.
+erDiagram
+  Duenios ||--o{ Mascotas : "mascotas"
+  Especialidades ||--o{ Profesionales : "profesionales"
+  Mascotas ||--o{ Turnos : "turnos"
+  Profesionales ||--o{ Turnos : "turnos"
+  Turnos ||--o| Pagos : "pago"
+  Turnos ||--o| HistoriasClinicas : "historia"
+  Mascotas ||--o{ AuditoriaTurnos : "auditorias"
+  Profesionales ||--o{ AuditoriaTurnos : "auditorias"
+  Duenios {
+    INT id_duenio PK "NN · ID"
+    VARCHAR_15 dni UK "NN"
+    VARCHAR_60 nombre "NN"
+    VARCHAR_60 apellido "NN"
+    VARCHAR_30 telefono "NULL"
+    VARCHAR_100 email "NULL"
+    VARCHAR_150 direccion "NULL"
+  }
+  Especialidades {
+    INT id_especialidad PK "NN · ID"
+    VARCHAR_60 nombre UK "NN"
+  }
+  Mascotas {
+    INT id_mascota PK "NN · ID"
+    INT id_duenio FK "NN"
+    VARCHAR_60 nombre "NN"
+    VARCHAR_40 especie "NN"
+    VARCHAR_60 raza "NULL"
+    DATE fecha_nacimiento "NULL"
+    CHAR_1 sexo "NULL · CK"
+    BIT activo "NN · DF 1"
+  }
+  Profesionales {
+    INT id_profesional PK "NN · ID"
+    INT id_especialidad FK "NN"
+    VARCHAR_20 matricula UK "NN"
+    VARCHAR_60 nombre "NN"
+    VARCHAR_60 apellido "NN"
+    VARCHAR_30 telefono "NULL"
+    VARCHAR_100 email "NULL"
+    BIT activo "NN · DF 1"
+  }
+  Turnos {
+    INT id_turno PK "NN · ID"
+    INT id_mascota FK "NN"
+    INT id_profesional FK "NN"
+    DATETIME fecha_hora_inicio "NN"
+    DATETIME fecha_hora_fin "NN · CK"
+    VARCHAR_20 estado "NN · DF"
+    VARCHAR_200 motivo "NULL"
+  }
+  Pagos {
+    INT id_pago PK "NN · ID"
+    INT id_turno FK "NN / UQ"
+    VARCHAR_20 nro_comprobante UK "NN"
+    DECIMAL_10_2 monto "NN · CK"
+    VARCHAR_30 metodo_pago "NN · CK"
+    DATETIME fecha_pago "NN · DF"
+  }
+  HistoriasClinicas {
+    INT id_historia PK "NN · ID"
+    INT id_turno FK "NN / UQ"
+    VARCHAR_300 diagnostico "NN"
+    VARCHAR_300 tratamiento "NULL"
+    VARCHAR_1000 observaciones "NULL"
+    DATETIME fecha_registro "NN · DF"
+  }
+  AuditoriaTurnos {
+    INT id_auditoria PK "NN · ID"
+    INT id_turno "NN / HIST SIN FK"
+    INT id_mascota FK "NN"
+    INT id_profesional FK "NN"
+    DATETIME fecha_hora_inicio_anterior "NULL"
+    DATETIME fecha_hora_inicio_nueva "NULL"
+    VARCHAR_15 tipo_evento "NN · CK"
+    VARCHAR_200 motivo_evento "NULL"
+    DATETIME fecha_evento "NN · DF"
+  }
