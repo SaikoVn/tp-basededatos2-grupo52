@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|c:\\users\\quiro\\onedrive\\desktop\\archivos\\bd2-tpi-veterinaria\\appveterinaria\\app-veterinaria-bd2-tpi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|solutionrelative:app-veterinaria-bd2-tpi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Default.aspx",
+              "RelativeDocumentMoniker": "App-Veterinaria-BD2-TPI\\Default.aspx",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Default.aspx",
+              "RelativeToolTip": "App-Veterinaria-BD2-TPI\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-11-10T17:59:56.21Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

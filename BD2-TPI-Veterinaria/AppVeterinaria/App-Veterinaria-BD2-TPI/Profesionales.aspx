@@ -1,0 +1,4 @@
+<%@ Page Language="C#" Title="Profesionales" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Profesionales.aspx.cs" Inherits="VeterinariaWeb.PaginaProfesionales" %>
+<asp:Content runat="server" ContentPlaceHolderID="Contenido">
+<div class="table-responsive"><asp:GridView ID="Tabla" runat="server" CssClass="table table-hover" GridLines="None" EmptyDataText="Sin registros para esta consulta." DataKeyNames="ID" OnRowCommand="Tabla_Comando" OnRowDataBound="FormatearFila"><Columns><asp:TemplateField HeaderText="Acciones"><ItemTemplate><asp:Button runat="server" Text="Desactivar" CommandName="Desactivar" CssClass="btn btn-sm btn-outline-secondary" Visible='<%# (bool)Eval("Estado") %>'/><asp:Button runat="server" Text="Activar" CommandName="Activar" CssClass="btn btn-sm btn-outline-secondary" Visible='<%# !(bool)Eval("Estado") %>'/></ItemTemplate></asp:TemplateField></Columns></asp:GridView></div>
+</asp:Content>

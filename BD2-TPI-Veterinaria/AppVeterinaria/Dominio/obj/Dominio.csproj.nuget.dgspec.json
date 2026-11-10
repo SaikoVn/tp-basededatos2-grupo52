@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj",
+        "projectName": "Dominio",
+        "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\quiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\quiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "framework": "net48",
+            "projectReferences": {
+              "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
+                "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj"
+              }
+            }
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "framework": "net48",
+          "dependencies": {
+            "System.Data.Common": {
+              "include": "None",
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj",
+        "projectName": "Servicio",
+        "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj",
+        "packagesPath": "C:\\Users\\quiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\quiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "framework": "net48",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "framework": "net48",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[7.1.1, )"
+            },
+            "System.Data.Common": {
+              "include": "None",
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

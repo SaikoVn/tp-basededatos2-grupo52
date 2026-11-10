@@ -1,0 +1,43 @@
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"/>
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <Platform Condition="'$(Platform)'==''">AnyCPU</Platform>
+    <ProjectGuid>{21CEB5BC-0694-4C13-A114-418C1A1F4914}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Dominio</RootNamespace>
+    <AssemblyName>Dominio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DebugSymbols Condition="'$(Configuration)'=='Debug'">true</DebugSymbols>
+    <Optimize Condition="'$(Configuration)'=='Release'">true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System"/>
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Data.Common"><HintPath>$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\System.Data.Common.dll</HintPath><Private>False</Private></Reference>
+    <PackageReference Include="System.Data.Common" Version="4.3.0" ExcludeAssets="all"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="System.Configuration"/>
+
+    <ProjectReference Include="..\Servicio\Servicio.csproj"><Project>{72BFCC53-9AE8-46D4-A9E6-1E7168DA2C77}</Project><Name>Servicio</Name></ProjectReference>
+    <Compile Include="Inicio.cs"/>
+    <Compile Include="Duenios.cs"/>
+    <Compile Include="Mascotas.cs"/>
+    <Compile Include="Profesionales.cs"/>
+    <Compile Include="Turnos.cs"/>
+    <Compile Include="Pagos.cs"/>
+    <Compile Include="Agenda.cs"/>
+    <Compile Include="Historial.cs"/>
+    <Compile Include="Facturacion.cs"/>
+    <Compile Include="Frecuencia.cs"/>
+    <Compile Include="Auditoria.cs"/>
+    <Compile Include="Reporte.cs"/>
+
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+
+</Project>
+
+
