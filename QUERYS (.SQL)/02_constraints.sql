@@ -1,4 +1,4 @@
-02 - FOREIGN KEY, UNIQUE, CHECK, DEFAULT, indices
+-- FOREIGN KEY, UNIQUE, CHECK, DEFAULT, indices
 USE [Veterinaria];
 GO
 -- UNIQUE (maximo UN pago por turno)

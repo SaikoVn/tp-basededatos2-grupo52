@@ -1,4 +1,4 @@
--- 03 - FUNCION: cantidad de consultas atendidas de una mascota
+-- FUNCION: cantidad de consultas atendidas de una mascota
 -- Se usa en las vistas 04.
 USE Veterinaria;
 GO
