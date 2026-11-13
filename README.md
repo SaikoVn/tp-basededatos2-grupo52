@@ -23,7 +23,7 @@
 - **Auditoría** lee AuditoriaTurnos junto con Mascotas y Profesionales. El ID histórico se toma de la auditoría y puede consultarse después de borrar el turno.
 
 # TPI elaborado por los siguientes integrantes (Nombres y apellidos, y legajo):
-1. Fernando Gabriel Quiroga Medina (33404)
-2. Abril Barrientos (29696)
-3. Thomas Ferreyra Willemet (33190)
-4. Ignacio David Rau (33650)
+- Fernando Gabriel Quiroga Medina (33404)
+- Abril Barrientos (29696)
+- Thomas Ferreyra Willemet (33190)
+- Ignacio David Rau (33650)
