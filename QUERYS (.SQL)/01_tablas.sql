@@ -89,6 +89,8 @@ CREATE TABLE dbo.AuditoriaTurnos (
     id_turno INT NOT NULL, -- REFERENCIA HISTORICA: deliberadamente SIN FK a Turnos
     id_mascota INT NOT NULL,
     id_profesional INT NOT NULL,
+    fecha_hora_fin_anterior DATETIME NULL,
+    fecha_hora_fin_nueva DATETIME NULL,
     fecha_hora_inicio_anterior DATETIME NULL, -- NULL en el evento de alta
     fecha_hora_inicio_nueva DATETIME NULL,    -- NULL en cancelado y baja
     tipo_evento VARCHAR(15) NOT NULL,

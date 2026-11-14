@@ -45,7 +45,7 @@ BEGIN
     BEGIN TRY
         BEGIN TRANSACTION;
 
-        IF NOT EXISTS (SELECT 1 FROM dbo.Turnos WHERE id_turno = @id_turno)
+        IF NOT EXISTS (SELECT 1 FROM dbo.Turnos WITH (UPDLOCK,HOLDLOCK) WHERE id_turno = @id_turno)
             THROW 50002, 'El turno indicado no existe.', 1;
 
         IF EXISTS (

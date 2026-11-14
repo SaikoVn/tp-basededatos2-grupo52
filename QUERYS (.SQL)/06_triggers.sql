@@ -87,15 +87,16 @@ BEGIN
     INNER JOIN deleted d ON i.id_turno = d.id_turno
     WHERE d.estado <> 'cancelado' AND i.estado = 'cancelado';
 
-    -- Guardamos la reprogramacion cuando cambia la hora de inicio.
+    -- Guardamos ambos extremos del horario al reprogramar.
     INSERT INTO dbo.AuditoriaTurnos
         (id_turno, id_mascota, id_profesional,
-         fecha_hora_inicio_anterior, fecha_hora_inicio_nueva, tipo_evento)
+         fecha_hora_inicio_anterior, fecha_hora_inicio_nueva, tipo_evento, fecha_hora_fin_anterior, fecha_hora_fin_nueva)
     SELECT i.id_turno, i.id_mascota, i.id_profesional,
-           d.fecha_hora_inicio, i.fecha_hora_inicio, 'reprogramacion'
+           d.fecha_hora_inicio, i.fecha_hora_inicio, 'reprogramacion',
+           d.fecha_hora_fin, i.fecha_hora_fin
     FROM inserted i
     INNER JOIN deleted d ON i.id_turno = d.id_turno
-    WHERE i.fecha_hora_inicio <> d.fecha_hora_inicio;
+    WHERE i.fecha_hora_inicio <> d.fecha_hora_inicio OR i.fecha_hora_fin <> d.fecha_hora_fin;
 END;
 GO
 

@@ -51,7 +51,9 @@ ALTER TABLE dbo.AuditoriaTurnos ADD CONSTRAINT CK_AuditoriaTurnos_FechasEvento
         OR (tipo_evento = 'reprogramacion'
             AND fecha_hora_inicio_anterior IS NOT NULL
             AND fecha_hora_inicio_nueva IS NOT NULL
-            AND fecha_hora_inicio_anterior <> fecha_hora_inicio_nueva)
+            AND (fecha_hora_inicio_anterior <> fecha_hora_inicio_nueva
+                 OR (fecha_hora_fin_anterior IS NOT NULL AND fecha_hora_fin_nueva IS NOT NULL
+                     AND fecha_hora_fin_anterior <> fecha_hora_fin_nueva)))
         OR (tipo_evento IN ('cancelado', 'baja')
             AND fecha_hora_inicio_anterior IS NOT NULL
             AND fecha_hora_inicio_nueva IS NULL)
