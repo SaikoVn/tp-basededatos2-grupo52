@@ -1,9 +1,5 @@
 using System;
-using System.Data;
-using System.Globalization;
-using System.Linq;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace VeterinariaWeb
 {
@@ -13,19 +9,18 @@ namespace VeterinariaWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack) return;
-            Intentar(() => {
-                Cargar();
-            });
+            if (!IsPostBack) Intentar(Cargar);
         }
 
         private void Cargar()
         {
-            var datos = dominio.Listar();
-            Tabla.DataSource = datos;
-            Tabla.DataBind();
+            Vincular(Tabla, dominio.Listar(Texto(FiltroMascota, false),
+                Texto(FiltroEspecie, false), Texto(FiltroDni, false), EstadoLista.SelectedValue));
         }
 
-        
+        protected void Filtrar_Click(object sender, EventArgs e)
+        {
+            Intentar(Cargar);
+        }
     }
 }

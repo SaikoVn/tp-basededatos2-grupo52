@@ -9,10 +9,21 @@ namespace Dominio
     {
         private readonly AccesoDatos db = new AccesoDatos();
 
-        public DataTable Listar()
+        public DataTable Listar(int id, int turno, string evento, DateTime? desde, DateTime? hasta)
         {
-            return db.Consultar(@"SELECT a.id_auditoria ID,a.id_turno [Turno histórico],m.nombre Mascota,CONCAT(p.apellido,', ',p.nombre) Profesional,a.tipo_evento Evento,a.fecha_evento Fecha,a.fecha_hora_inicio_anterior [Inicio anterior],a.fecha_hora_inicio_nueva [Inicio nuevo],a.motivo_evento Motivo
-                    FROM dbo.AuditoriaTurnos a JOIN dbo.Mascotas m ON m.id_mascota=a.id_mascota JOIN dbo.Profesionales p ON p.id_profesional=a.id_profesional ORDER BY a.fecha_evento DESC,a.id_auditoria DESC");
+            evento = evento ?? "";
+            DateTime? hastaExclusivo = hasta.HasValue ? hasta.Value.Date.AddDays(1) : (DateTime?)null;
+            return db.Consultar(@"SELECT id_auditoria ID, id_turno Turno,
+                    tipo_evento Evento, fecha_evento Fecha, motivo_evento Motivo
+                    FROM dbo.AuditoriaTurnos
+                    WHERE (@id = 0 OR id_auditoria = @id)
+                      AND (@turno = 0 OR id_turno = @turno)
+                      AND (@evento = '' OR tipo_evento = @evento)
+                      AND (@desde IS NULL OR fecha_evento >= @desde)
+                      AND (@hasta IS NULL OR fecha_evento < @hasta)
+                    ORDER BY fecha_evento DESC, id_auditoria DESC",
+                Param("@id", id), Param("@turno", turno), Param("@evento", evento),
+                Param("@desde", desde), Param("@hasta", hastaExclusivo));
         }
     }
 }

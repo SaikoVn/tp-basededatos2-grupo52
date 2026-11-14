@@ -1,9 +1,5 @@
 using System;
-using System.Data;
-using System.Globalization;
-using System.Linq;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace VeterinariaWeb
 {
@@ -13,24 +9,21 @@ namespace VeterinariaWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack) return;
-            Intentar(() => {
-                Opciones(Profesional, dominio.OpcionesProfesionales());
-            });
-        }
-
-        private void Cargar()
-        {
-            var desde = Fecha(Desde);
-            var hasta = Fecha(Hasta);
-            if (desde > hasta || hasta == DateTime.MaxValue.Date) throw new ArgumentException("Revisá el rango de fechas.");
-            Tabla.DataSource = dominio.Consultar(Id(Profesional), desde, hasta);
-            Tabla.DataBind();
+            if (!IsPostBack) Intentar(() => Opciones(Profesional, dominio.OpcionesProfesionales()));
         }
 
         protected void Consultar_Click(object sender, EventArgs e)
         {
-            Intentar(Cargar);
+            Intentar(() =>
+            {
+                DateTime desde = Fecha(Desde).Date;
+                DateTime hasta = Fecha(Hasta).Date;
+                if (desde > hasta)
+                    throw new ArgumentException("La fecha desde debe ser anterior o igual a la fecha hasta.");
+
+                Vincular(Tabla, dominio.Consultar(Id(Profesional), desde, hasta));
+                Avisar("Reporte consultado.", false);
+            });
         }
     }
 }

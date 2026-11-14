@@ -1,10 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\",
+  "WorkspaceRootPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|c:\\users\\quiro\\onedrive\\desktop\\archivos\\bd2-tpi-veterinaria\\appveterinaria\\app-veterinaria-bd2-tpi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{21CEB5BC-0694-4C13-A114-418C1A1F4914}|Dominio\\Dominio.csproj|c:\\users\\quiro\\onedrive\\desktop\\test\\bd2-tpi-veterinaria\\appveterinaria\\dominio\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21CEB5BC-0694-4C13-A114-418C1A1F4914}|Dominio\\Dominio.csproj|solutionrelative:dominio\\historial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\app-veterinaria-bd2-tpi\\frecuencia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|solutionrelative:app-veterinaria-bd2-tpi\\frecuencia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\app-veterinaria-bd2-tpi\\turnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|solutionrelative:app-veterinaria-bd2-tpi\\turnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\app-veterinaria-bd2-tpi\\master.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|solutionrelative:app-veterinaria-bd2-tpi\\master.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\app-veterinaria-bd2-tpi\\frecuencia.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|solutionrelative:app-veterinaria-bd2-tpi\\frecuencia.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\app-veterinaria-bd2-tpi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|solutionrelative:app-veterinaria-bd2-tpi\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\app-veterinaria-bd2-tpi\\agenda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{684148C5-3E16-4C93-B9B7-252CC68B3831}|App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj|solutionrelative:app-veterinaria-bd2-tpi\\agenda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,16 +46,88 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Frecuencia.aspx",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Frecuencia.aspx",
+              "RelativeDocumentMoniker": "App-Veterinaria-BD2-TPI\\Frecuencia.aspx",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Frecuencia.aspx",
+              "RelativeToolTip": "App-Veterinaria-BD2-TPI\\Frecuencia.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-11-13T23:14:44.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Turnos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Turnos.aspx.cs",
+              "RelativeDocumentMoniker": "App-Veterinaria-BD2-TPI\\Turnos.aspx.cs",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Turnos.aspx.cs",
+              "RelativeToolTip": "App-Veterinaria-BD2-TPI\\Turnos.aspx.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAIwCcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T23:14:44.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Master.Master.designer.cs",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Master.Master.designer.cs",
+              "RelativeDocumentMoniker": "App-Veterinaria-BD2-TPI\\Master.Master.designer.cs",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Master.Master.designer.cs",
+              "RelativeToolTip": "App-Veterinaria-BD2-TPI\\Master.Master.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T23:14:44.667Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Historial.cs",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Historial.cs",
+              "RelativeDocumentMoniker": "Dominio\\Historial.cs",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Historial.cs",
+              "RelativeToolTip": "Dominio\\Historial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T23:14:44.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frecuencia.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Frecuencia.aspx.designer.cs",
+              "RelativeDocumentMoniker": "App-Veterinaria-BD2-TPI\\Frecuencia.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Frecuencia.aspx.designer.cs",
+              "RelativeToolTip": "App-Veterinaria-BD2-TPI\\Frecuencia.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T23:14:44.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Agenda.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Agenda.aspx.designer.cs",
+              "RelativeDocumentMoniker": "App-Veterinaria-BD2-TPI\\Agenda.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Agenda.aspx.designer.cs",
+              "RelativeToolTip": "App-Veterinaria-BD2-TPI\\Agenda.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T23:14:44.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Default.aspx",
-              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Default.aspx",
+              "DocumentMoniker": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Default.aspx",
               "RelativeDocumentMoniker": "App-Veterinaria-BD2-TPI\\Default.aspx",
-              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Default.aspx",
+              "ToolTip": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\Default.aspx",
               "RelativeToolTip": "App-Veterinaria-BD2-TPI\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-11-10T17:59:56.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-13T23:14:44.678Z"
             }
           ]
         }

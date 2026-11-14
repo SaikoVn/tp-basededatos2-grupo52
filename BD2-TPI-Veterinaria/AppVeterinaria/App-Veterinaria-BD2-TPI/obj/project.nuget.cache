@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VqQ6JTMFTDU=",
+  "dgSpecHash": "5T/y364S6d8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj",
+  "projectFilePath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\quiro\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\10.0.3\\microsoft.bcl.asyncinterfaces.10.0.3.nupkg.sha512",
     "C:\\Users\\quiro\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",

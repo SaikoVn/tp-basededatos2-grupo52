@@ -1,9 +1,4 @@
 using System;
-using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace VeterinariaWeb
 {
@@ -14,27 +9,23 @@ namespace VeterinariaWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) return;
-            Intentar(() => {
-                Opciones(Turno, dominio.OpcionesTurnos());
-                Cargar();
-            });
+            Intentar(Cargar);
         }
 
         private void Cargar()
         {
-            var datos = dominio.Listar();
-            Tabla.DataSource = datos;
-            Tabla.DataBind();
+            DateTime? desde = FechaOpcional(DesdeLista);
+            DateTime? hasta = FechaOpcional(HastaLista);
+            if (desde.HasValue && hasta.HasValue && desde.Value.Date > hasta.Value.Date)
+                throw new ArgumentException("La fecha desde debe ser anterior o igual a la fecha hasta.");
+            Vincular(Tabla, dominio.Listar(IdOpcional(FiltroId), IdOpcional(FiltroTurno),
+                Texto(FiltroComprobante, false), FiltroMetodo.SelectedValue, desde, hasta));
         }
 
-        protected void Registrar_Click(object sender, EventArgs e)
+        protected void Filtrar_Click(object sender, EventArgs e)
         {
-            Guardar(() => {
-                decimal monto;
-                if (!decimal.TryParse(Monto.Text, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out monto) || monto <= 0 || monto > 99999999.99m || decimal.Round(monto, 2) != monto)
-                    throw new ArgumentException("Ingresá un monto positivo con hasta dos decimales.");
-                dominio.RegistrarPago(Id(Turno), Texto(Comprobante), monto, Metodo.SelectedValue);
-            }, "Pago registrado. Verificá el estado del turno en la tabla.");
+            Intentar(Cargar);
         }
+
     }
 }

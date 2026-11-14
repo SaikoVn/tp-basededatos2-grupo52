@@ -4844,26 +4844,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\quiro\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\quiro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj",
+      "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj",
       "projectName": "VeterinariaWeb",
-      "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj",
+      "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\App-Veterinaria-BD2-TPI.csproj",
       "packagesPath": "C:\\Users\\quiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\obj\\",
+      "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\App-Veterinaria-BD2-TPI\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\quiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4877,11 +4872,11 @@
         "net48": {
           "framework": "net48",
           "projectReferences": {
-            "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj"
+            "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
-              "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj"
+            "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
+              "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj"
             }
           }
         }

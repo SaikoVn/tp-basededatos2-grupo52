@@ -1,19 +1,39 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="VeterinariaWeb.Principal" %>
-<!doctype html><html lang="es"><head runat="server"><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title><%: Page.Title %> · Veterinaria</title>
-<link href="Content/bootstrap.min.css" rel="stylesheet"/><link href="Content/site.css" rel="stylesheet"/></head>
-<body><header><div class="marca">Clínica veterinaria</div><nav aria-label="Principal">
-<a href="Default.aspx">Inicio</a>
-<a href="Duenios.aspx">Dueños</a>
-<a href="Mascotas.aspx">Mascotas</a>
-<a href="Profesionales.aspx">Profesionales</a>
-<a href="Turnos.aspx">Turnos</a>
-<a href="Pagos.aspx">Pagos</a>
-<a href="Agenda.aspx">Agenda de turnos</a>
-<a href="Historial.aspx">Historial clínico</a>
-<a href="Facturacion.aspx">Facturación</a>
-<a href="Frecuencia.aspx">Frecuencia de consultas</a>
-<a href="Auditoria.aspx">Auditoría de turnos</a>
-<a href="Reporte.aspx">Reporte de turnos por profesional</a>
-</nav></header><main><form runat="server"><h1><%: Page.Title %></h1>
-<asp:Label ID="Aviso" runat="server" role="status" Visible="false"/>
-<asp:ContentPlaceHolder ID="Contenido" runat="server"/></form></main></body></html>
+<!doctype html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%: Page.Title %> · Veterinaria</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="marca">Clínica veterinaria</div>
+        <nav aria-label="Principal">
+            <a href="Default.aspx">Inicio</a>
+            <a href="Duenios.aspx">Dueños</a>
+            <a href="Mascotas.aspx">Mascotas</a>
+            <a href="Profesionales.aspx">Profesionales</a>
+            <a href="Especialidades.aspx">Especialidades</a>
+            <a href="Turnos.aspx">Turnos</a>
+            <a href="Pagos.aspx">Pagos</a>
+            <a href="Agenda.aspx">Agenda</a>
+            <a href="Historial.aspx">Historial</a>
+            <a href="Facturacion.aspx">Facturación</a>
+            <a href="Frecuencia.aspx">Frecuencia</a>
+            <a href="Auditoria.aspx">Auditoría</a>
+            <a href="Reporte.aspx">Reporte por profesional</a>
+        </nav>
+    </header>
+    <main>
+        <form runat="server">
+            <asp:Label ID="Aviso" runat="server" Visible="false" />
+            <h1><%: Page.Title %></h1>
+            <asp:ContentPlaceHolder ID="Contenido" runat="server" />
+        </form>
+    </main>
+    <script src="Scripts/workspace.js"></script>
+</body>
+</html>

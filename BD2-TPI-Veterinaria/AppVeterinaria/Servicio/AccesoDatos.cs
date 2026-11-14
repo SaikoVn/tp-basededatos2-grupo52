@@ -1,13 +1,14 @@
-using System;
 using System.Configuration;
 using System.Data;
 using Microsoft.Data.SqlClient;
 
 namespace Servicio
 {
+    // Abre una conexión por operación y recibe consultas parametrizadas.
     public class AccesoDatos
     {
-        private readonly string cadena = ConfigurationManager.ConnectionStrings["Veterinaria"].ConnectionString;
+        private readonly string cadena =
+            ConfigurationManager.ConnectionStrings["Veterinaria"].ConnectionString;
 
         public DataTable Consultar(string sql, params SqlParameter[] parametros)
         {
@@ -38,7 +39,7 @@ namespace Servicio
 
         public static SqlParameter Param(string nombre, object valor)
         {
-            return new SqlParameter(nombre, valor ?? DBNull.Value);
+            return new SqlParameter(nombre, valor ?? System.DBNull.Value);
         }
     }
 }

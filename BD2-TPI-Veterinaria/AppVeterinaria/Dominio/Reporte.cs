@@ -9,12 +9,20 @@ namespace Dominio
     {
         private readonly AccesoDatos db = new AccesoDatos();
 
-        public DataTable OpcionesProfesionales() => db.Consultar("SELECT id_profesional,CONCAT(apellido,', ',nombre,' · ',matricula) etiqueta FROM dbo.Profesionales ORDER BY etiqueta");
-        
+        public DataTable OpcionesProfesionales()
+        {
+            return db.Consultar(@"SELECT id_profesional,
+                    CONCAT(apellido, ', ', nombre, ' · ', matricula) Profesional
+                    FROM dbo.Profesionales ORDER BY apellido, nombre");
+        }
+
         public DataTable Consultar(int profesional, DateTime desde, DateTime hasta)
         {
-            return db.Consultar("EXEC dbo.sp_ReporteTurnosProfesional @id_profesional, @desde, @hasta_exclusivo",
-                Param("@id_profesional", profesional), Param("@desde", desde.Date), Param("@hasta_exclusivo", hasta.Date.AddDays(1)));
+            return db.Consultar(@"EXEC dbo.sp_ReporteTurnosProfesional
+                    @id_profesional = @profesional, @desde = @desde,
+                    @hasta_exclusivo = @hasta",
+                Param("@profesional", profesional), Param("@desde", desde.Date),
+                Param("@hasta", hasta.Date.AddDays(1)));
         }
     }
 }

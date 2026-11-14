@@ -1,9 +1,5 @@
 using System;
-using System.Data;
-using System.Globalization;
-using System.Linq;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace VeterinariaWeb
 {
@@ -13,21 +9,22 @@ namespace VeterinariaWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack) return;
-            Intentar(() => {
-                Cargar();
-            });
+            if (!IsPostBack) Intentar(Cargar);
         }
 
         private void Cargar()
         {
-            int mascota;
-            int.TryParse(Request.QueryString["id"], out mascota);
-            var datos = dominio.Listar(mascota);
-            Tabla.DataSource = datos;
-            Tabla.DataBind();
+            DateTime? desde = FechaOpcional(DesdeLista);
+            DateTime? hasta = FechaOpcional(HastaLista);
+            if (desde.HasValue && hasta.HasValue && desde.Value.Date > hasta.Value.Date)
+                throw new ArgumentException("La fecha desde debe ser anterior o igual a la fecha hasta.");
+            Vincular(Tabla, dominio.Listar(Texto(FiltroMascota, false),
+                Texto(FiltroDuenio, false), IdOpcional(FiltroTurno), desde, hasta));
         }
 
-        
+        protected void Filtrar_Click(object sender, EventArgs e)
+        {
+            Intentar(Cargar);
+        }
     }
 }

@@ -1,26 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {}
+    "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\quiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\quiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,8 +30,8 @@
           "net48": {
             "framework": "net48",
             "projectReferences": {
-              "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
-                "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj"
+              "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
+                "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj"
               }
             }
           }
@@ -73,23 +69,19 @@
         }
       }
     },
-    "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
+    "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj",
+        "projectUniqueName": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj",
         "projectName": "Servicio",
-        "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj",
+        "projectPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\Servicio.csproj",
         "packagesPath": "C:\\Users\\quiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Archivos\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\obj\\",
+        "outputPath": "C:\\Users\\quiro\\OneDrive\\Desktop\\Test\\BD2-TPI-Veterinaria\\AppVeterinaria\\Servicio\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\quiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
